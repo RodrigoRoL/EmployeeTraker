@@ -1,0 +1,45 @@
+INSERT INTO departments (id, department_name)
+VALUES (01, "Executive Office"),
+       (02, "Human Resources"),
+       (03, "Accounting"),
+       (04, "Finances"),
+       (05, "Marketing"),
+       (06, "Customer Support"),
+       (07, "IT"),
+       (08, "Legal");
+
+INSERT INTO roles (id, title, department, salary)  
+VALUES (01, "CEO", 01, 100000),
+       (02, "CFO", 01, 100000),
+       (03, "HR Manager", 02, 80000),
+       (04, "HR Associate", 02, 50000),
+       (05, "Accounting Manager", 03, 80000),
+       (06, "Accounting Associate", 03, 50000),
+       (07, "Finances Manager", 04, 80000),
+       (08, "Finances Associate", 04, 50000),
+       (09, "Marketing Manager", 05, 80000),
+       (10, "Marketing Associate", 05, 50000),
+       (11, "Customer Support Manager", 06, 70000),
+       (12, "Customer Support Associate", 06, 45000),
+       (13, "IT Manager", 07, 90000),
+       (14, "IT Associate", 07, 65000),
+       (15, "Legal Manager", 08, 80000),
+       (16, "Legal Associate", 08, 60000);
+
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id) 
+VALUES (001, "John", "Doe", 01, 001),
+       (002, "Jenny", "Bravo", 02, 001),
+       (003, "Tom", "Perez", 03, 001),
+       (004, "Max", "Sanchez", 04, 003),
+       (005, "Adriana", "Rodriguez",  05, 001),
+       (006, "Elizabeth", "Hernandez", 06, 005),
+       (007, "Enrique", "Andrade", 07, 001),
+       (008, "Willy", "Robles", 08, 007),
+       (009, "Andrea", "Smith",  09, 001),
+       (010, "Alex", "Prom", 010, 009),
+       (011, "Alejandra", "Azul", 11, 001),
+       (012, "Patricia", "Berg", 12, 011),
+       (013, "Fernando", "Yapal", 13, 001),
+       (014, "Henry", "Sac", 14, 013),
+       (015, "Xavier", "Carter", 15, 001),
+       (016, "Julia", "Roberts", 16, 015);
